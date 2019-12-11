@@ -1,5 +1,21 @@
-
-
+#spring的页面热部署
+spring:
+#  devtools:
+#    restart:
+#    enabled: true
+    jpa:
+      database: mysql
+      hibernate:
+        ddl-auto:create
+    datasource:
+      url: jdbc:mysql://##############/##########?useUnicode=true&characterEncoding=utf8&useSSL=true&autoReconnect=true
+      username: ##########
+      password: ##########
+#      数据库通讯种类
+#      将原有的com.mysql.jdbc.Driver更新
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    server:
+        port: 8000
 
 
 
